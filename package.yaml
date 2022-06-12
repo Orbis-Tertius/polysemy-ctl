@@ -1,0 +1,24 @@
+name:                polysemy-ctl
+version:             0.1.0.0
+github:              "githubuser/polysemy-ctl"
+license:             MIT
+author:              "Daniel Firth"
+maintainer:          "dan.firth@homotopic.tech"
+copyright:           "2022 Daniel Firth"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+synopsis:            Cardano Transaction Library - Polysemy Version
+category:            Cardano, Plutus, Polysemy
+
+description:         Cardano Transaction Library Written In Polysemy
+
+dependencies:
+- base >= 4.7 && < 5
+- polysemy >= 1.7.1.0 && < 1.8
+- plutus-tx
+
+library:
+  source-dirs: src

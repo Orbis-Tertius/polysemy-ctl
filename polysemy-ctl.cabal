@@ -1,0 +1,39 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.7.
+--
+-- see: https://github.com/sol/hpack
+
+name:           polysemy-ctl
+version:        0.1.0.0
+synopsis:       Cardano Transaction Library - Polysemy Version
+description:    Cardano Transaction Library Written In Polysemy
+category:       Cardano, Plutus, Polysemy
+homepage:       https://github.com/githubuser/polysemy-ctl#readme
+bug-reports:    https://github.com/githubuser/polysemy-ctl/issues
+author:         Daniel Firth
+maintainer:     dan.firth@homotopic.tech
+copyright:      2022 Daniel Firth
+license:        MIT
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/polysemy-ctl
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_polysemy_ctl
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , plutus-tx
+    , polysemy >=1.7.1.0 && <1.8
+  default-language: Haskell2010
