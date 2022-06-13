@@ -34,15 +34,6 @@
                       pkgs.lib.mkForce [ [ (import plutus { inherit system; }).pkgs.libsodium-vrf ] ];
                   };
                 }];
-                shell.tools = {
-                  cabal = { };
-                  ghcid = { };
-                  hlint = { };
-                  haskell-language-server = { };
-                };
-                shell.buildInputs = with pkgs; [
-                  nixpkgs-fmt
-                ];
               };
           })
         ];
