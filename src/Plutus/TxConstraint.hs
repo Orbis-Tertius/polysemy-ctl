@@ -4,7 +4,7 @@ module Plutus.TxConstraint where
 
 import           GHC.Generics
 import           PlutusLedgerApi.V1
-import qualified PlutusTx           as PlutusTx
+import qualified PlutusTx
 import           PlutusTx.Lift      as Lift
 import qualified PlutusTx.Prelude   as PlutusTx
 
